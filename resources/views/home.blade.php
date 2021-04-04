@@ -12,7 +12,7 @@
 			<div class="col-md-6">
 				<h2>Book List</h2>
 			</div>
-            <p>Berikut adalah daftar buku Perustakaan Sinar Abadi</p>
+            
 			<li><a href="/genre">Genre</a></li>
 			<li><a href="/rent">Rent</a></li>
 			<title>Book list</title>
@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
 	<div class="panel-body">
-		<form method="post" class="form-horizontal">
+		<p>Berikut adalah daftar buku Perustakaan Sinar Abadi</p>
+		
 			<div class="form-group">
 				<label class="control-label col-md-3">ID</label>
 			<div class="col-md-7">
 				<input type="text" class="form-control" name="id" required>
 			</div>
-			<form method="post" class="form-horizontal">
+			
 				<div class="form-group">
 					<label class="control-label col-md-3">Nama Buku</label>
 				<div class="col-md-7">
@@ -37,13 +38,13 @@
 			<div class="form-group">
 				<label class="control-label col-md-3">Genre Id</label>
 				<div class="col-md-7">
-					<input type="number" class="form-control" name="genre id" required>
+					<input type="text" class="form-control" name="genre id" required>
 				</div>
 			</div>
 			<div class="form-group">
 				<label class="control-label col-md-3">Writer</label>
 				<div class="col-md-7">
-					<input type="writer" class="form-control" name="writer" required>
+					<input type="text" class="form-control" name="writer" required>
 				</div>
 			</div>
 			<div class="form-group">
@@ -54,13 +55,10 @@
 				<div class="form-group">
 					<label class="control-label col-md-3">Status</label>
 					<div class="col-md-7">
-					<input type="status" class="form-control" name="status" required>
+					<input type="text" class="form-control" name="status" required>
 					</div>
 			</div>
-			<form method="post">
-				<div class="form-group">
-					<div class="input-group">
-					</div>
+			
 				</div>
 			</form>
 		</div>
