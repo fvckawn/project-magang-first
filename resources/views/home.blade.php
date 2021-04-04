@@ -18,19 +18,14 @@
 				<h2>Book List</h2>
 			</div>
             <p>Berikut adalah daftar buku Perustakaan Sinar Abadi</p>
-			
-				<li><a href="/genre">Genre</a></li>
-				<form method="post">
-					<div class="form-group">
-						<div class="input-group">
-
-					
-			</div>
-		</div>
-	</form>
-
-			
-			</div>
+			<li><a href="/genre">Genre</a></li>
+			<li><a href="/rent">Rent</a></li>
+			<form method="post">
+				<div class="form-group">
+					<div class="input-group">
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 </section>

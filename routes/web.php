@@ -26,3 +26,12 @@ Route::get('/login', function () {
 Route::get('/genre', function () {
     return view('genre');
 });
+Route::get('/rent', function () {
+    return view('rent');
+});
+Route::get('/personal_data', function () {
+    return view('personal_data');
+});
+Route::get('/rent_book', function () {
+    return view('rent_book');
+});
