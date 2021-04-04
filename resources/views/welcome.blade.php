@@ -12,7 +12,8 @@
 
   <ul>
     <li><a href="/home">Home</a></li>
-    <li><a href="/login">Login</a></li>
+    <li><a href="/login">Login (Admin Only)</a></li>
   </ul>
+  
 </body>
 </html>
