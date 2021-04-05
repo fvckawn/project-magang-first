@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="/css/style.css">
 	<div class="panel-body">
 		<p>Berikut adalah daftar buku Perustakaan Sinar Abadi</p>
-		
+		<table class="table">
+			<thead class="thead-dark">
+			<tr>
 			<div class="form-group">
 				<label class="control-label col-md-3">ID</label>
 			<div class="col-md-7">
@@ -60,6 +62,11 @@
 			</div>
 			
 				</div>
+			</tr>
+			</thead>
+		</table>
+		
+
 			</form>
 		</div>
 	</div>

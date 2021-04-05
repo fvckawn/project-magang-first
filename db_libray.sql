@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_libray`
+Database: `db_libray`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `book`
+Table structure for table `book`
 --
 
 CREATE TABLE `book` (

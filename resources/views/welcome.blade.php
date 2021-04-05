@@ -11,8 +11,8 @@
   <p>Perpustakaan Online, Memudahkan Anda Eksplorasi Dunia.</p>
 
   <ul>
-    <li><a href="/home">Home</a></li>
-    <li><a href="/login">Login (Admin Only)</a></li>
+    <li><a href="{{url('/home')}}">Home</a></li>
+    <li><a href="{{url('/login')}}">Login (Admin Only)</a></li>
   </ul>
   
 </body>

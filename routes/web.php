@@ -16,9 +16,7 @@ Route::get('/', function () {
 });
 
 // Route::get('coba', 'CobaController@index');
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', 'HomeController@index');
 
 Route::get('/login', function () {
     return view('login');

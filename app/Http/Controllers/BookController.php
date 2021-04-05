@@ -7,7 +7,7 @@ use Auth;
 
 class BookController extends Controller
 {
-    public function index() {
+    public function home() {
         $data = "Data All Book";
         return view('rent_book');
     }
