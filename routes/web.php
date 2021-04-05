@@ -21,9 +21,8 @@ Route::get('/home', 'HomeController@index');
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/genre', function () {
-    return view('genre');
-});
+Route::get('/genre', 'GenreController@index');
+
 Route::get('/rent', function () {
     return view('rent');
 });

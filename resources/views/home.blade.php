@@ -8,7 +8,7 @@
  <body style="background-color: azure;">
 <section class="kontent" style="background-color: azure;">
 	<div class="container">
-		<div class="row">
+		
 			<div class="col-md-6">
 				<h2>Book List</h2>
 			</div>
@@ -24,51 +24,31 @@
 		<p>Berikut adalah daftar buku Perustakaan Sinar Abadi</p>
 		<table class="table">
 			<thead class="thead-dark">
-			<tr>
-			<div class="form-group">
-				<label class="control-label col-md-3">ID</label>
-			<div class="col-md-7">
-				<input type="text" class="form-control" name="id" required>
-			</div>
-			
-				<div class="form-group">
-					<label class="control-label col-md-3">Nama Buku</label>
-				<div class="col-md-7">
-					<input type="text" class="form-control" name="nama buku" required>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-md-3">Genre Id</label>
-				<div class="col-md-7">
-					<input type="text" class="form-control" name="genre id" required>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-md-3">Writer</label>
-				<div class="col-md-7">
-					<input type="text" class="form-control" name="writer" required>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-md-3">Tahun Terbit</label>
-				<div class="col-md-7">
-				<input type="date" class="form-control" name="tahun terbit" required>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-md-3">Status</label>
-					<div class="col-md-7">
-					<input type="text" class="form-control" name="status" required>
-					</div>
-			</div>
-			
-				</div>
-			</tr>
+				<tr>
+				<th scope="col">No</th>
+				<th scope="col">ID</th>
+				<th scope="col">Nama Buku</th>
+				<th scope="col">Genre ID</th>
+				<th scope="col">Penulis</th>
+				<th scope="col">Tahun Terbit</th>
+				<th scope="col">Status</th>
+				</tr>
 			</thead>
-		</table>
-		
-
-			</form>
-		</div>
+			<tbody>
+				@foreach( $book as $boo )
+				<tr>
+					<th scope="row">{{$loop->iteration}}</th>
+					<td>{{$boo->id}}</td>
+					<td>{{$boo->name}}</td>
+					<td>{{$boo->genre_id}}</td>
+					<td>{{$boo->writer}}</td>
+					<td>{{$boo->year}}</td>
+					<td>{{$boo->status}}</td>
+				</tr>
+				@endforeach 
+			</tbody>
+		</table>	
+	
 	</div>
 </section>
 

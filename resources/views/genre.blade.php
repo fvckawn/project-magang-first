@@ -9,23 +9,31 @@
 	<h3 class="panel-title">Genre</h3>
 	<title>Genre</title>
 	<div class="panel-body">
-		<form method="post" class="form-horizontal">
-			<div class="form-group">
-				<label class="control-label col-md-3">ID</label>
-				<div class="col-md-7">
-					<input type="text" class="form-control" name="id" required>
-				</div>
-				<form method="post" class="form-horizontal">
-					<div class="form-group">
-						<label class="control-label col-md-3">Nama Genre</label>
-						<div class="col-md-7">
-							<input type="text" class="form-control" name="nama genre" required>
-						</div>
-					</div>
-				</form>
-			</div>
-		</form>
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+				<th scope="col">NO</th>
+				<th scope="col">ID</th>
+				<th scope="col">Nama Genre</th>
+				
+				</tr>
+			</thead>
+			<tbody>
+				@foreach( $genre as $gen )
+				<tr>
+					<th scope="row">{{$loop->iteration}}</th>
+					<td>{{$gen->id}}</td>
+					<td>{{$gen->name}}</td>
+					
+				</tr>
+				@endforeach 
+			</tbody>
+		</table>	
+	
+					
+			
+			
+		
 	</div>
-</div>
 </body>
 </html>
