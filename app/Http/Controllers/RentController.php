@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\PersonalData;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class Personal_DataController extends Controller
+class RentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +14,9 @@ class Personal_DataController extends Controller
      */
     public function index()
     {
-        $personal_data = DB::table('personal_data')->get();
+        $rent = DB::table('personal_data')->get();
     
-        return view('personal_data',['personal_data' => $personal_data]);
-
+        return view('rent',['personal_data' => $rent]);
     }
 
     /**
@@ -28,7 +26,7 @@ class Personal_DataController extends Controller
      */
     public function create()
     {
-        return view('personal_data.create');
+        //
     }
 
     /**
@@ -39,15 +37,7 @@ class Personal_DataController extends Controller
      */
     public function store(Request $request)
     {
-        $personal_data = new PersonalData;
-        $personal_data->id =$request->get('id');
-        $personal_data->name =$request->get('nama');
-        $personal_data->address =$request->get('alamat');
-        $personal_data->phone =$request->get('noponsel');
-        $personal_data->email =$request->get('email');
-
-        $personal_data->save();
-        return redirect('rent');
+        //
     }
 
     /**

@@ -23,9 +23,7 @@ Route::get('/login', function () {
 });
 Route::get('/genre', 'GenreController@index');
 
-Route::get('/rent', function () {
-    return view('rent');
-});
+Route::get('/rent', 'RentController@index');
 Route::get('/personal_data', 'Personal_DataController@index');
 Route::get('/personal_data/create', 'Personal_DataController@create');
 Route::post('/store', 'Personal_DataController@store');
