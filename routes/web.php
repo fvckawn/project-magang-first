@@ -26,9 +26,9 @@ Route::get('/genre', 'GenreController@index');
 Route::get('/rent', function () {
     return view('rent');
 });
-Route::get('/personal_data', function () {
-    return view('personal_data');
-});
+Route::get('/personal_data', 'Personal_DataController@index');
+Route::get('/personal_data/create', 'Personal_DataController@create');
+Route::post('/store', 'Personal_DataController@store');
 Route::get('/rent_book', function () {
     return view('rent_book');
 });

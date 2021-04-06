@@ -3,26 +3,20 @@
  <html>
  <head>
  	<title>Book List</title>
- 	<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  </head>
- <body style="background-color: azure;">
-<section class="kontent" style="background-color: azure;">
-	<div class="container">
-		
+ 
 			<div class="col-md-6">
-				<h2>Book List</h2>
+				<h1>Book List</h1>
 			</div>
-            
-			<li><a href="/genre">Genre</a></li>
-			<li><a href="/rent">Rent</a></li>
+          
+			
 			<title>Book list</title>
-	<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/form.css">
-    <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="/css/style.css">
-	<div class="panel-body">
-		<p>Berikut adalah daftar buku Perustakaan Sinar Abadi</p>
-		<table class="table">
+			<div class="col-md-7">
+				<p>Daftar Buku Milik Perpustakaan Sinar Abadi</p>
+			</div>
+		
+		<table class="table table-striped">
 			<thead class="thead-dark">
 				<tr>
 				<th scope="col">No</th>
@@ -49,9 +43,9 @@
 			</tbody>
 		</table>	
 	
-	</div>
-</section>
+		<li><a href="/genre">Genre</a></li>
+		<li><a href="/rent">Rent</a></li>
 
- </body>
+ 
  </html>
     

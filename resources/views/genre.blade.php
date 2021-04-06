@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>Genre</title>
-	<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body style="background-color: azure;">
-    <div class="container">
-	<h3 class="panel-title">Genre</h3>
+
+<div class="col-md-6">
+	<h2>Genre</h2>
+</div>
 	<title>Genre</title>
 	<div class="panel-body">
 		<table class="table">
@@ -35,5 +36,5 @@
 			
 		
 	</div>
-</body>
+
 </html>

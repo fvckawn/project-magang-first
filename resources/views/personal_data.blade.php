@@ -18,8 +18,10 @@
 					<div class="panel-heading">
 						<h3 class="panel-title">Data Diri</h3>
 					</div>
+					
 					<div class="panel-body">
-                        <form method="post" class="form-horizontal">
+                        <form method="post" action="/store" class="form-horizontal">
+							@csrf
 							<div class="form-group">
 								<label class="control-label col-md-3">ID</label>
 							<div class="col-md-7">
@@ -41,7 +43,7 @@
 						<div class="form-group">
 							<label class="control-label col-md-3">Nomor Ponsel</label>
 							<div class="col-md-7">
-								<input type="number" class="form-control" name="nomor ponsel" required>
+								<input type="number" class="form-control" name="noponsel" required>
 							</div>
 						</div>
 						<div class="form-group">
@@ -52,7 +54,7 @@
 						</div>
 						<div class="form-group">
 							<div class="col-md-7 col-md-offset-3">
-							<button class="btn btn-primary" name="daftar">Daftar</button>
+							<button type="submit" class="btn btn-primary" name="daftar">Daftar</button>
 
 						</form>
 
